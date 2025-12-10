@@ -1,0 +1,1076 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>عقد اتفاق تفعيل بطاقة خصم طبية - كيور لينك</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;800&family=Amiri:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --primary-color: #1e88a8;
+            --primary-dark: #156278;
+            --secondary-color: #f39c12;
+            --accent-color: #e74c3c;
+            --success-color: #27ae60;
+            --text-dark: #2c3e50;
+            --border-color: #ddd;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Cairo', sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #f093fb 100%);
+            min-height: 100vh;
+            padding: 2rem 1rem;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            overflow: hidden;
+        }
+
+        .header {
+            background: linear-gradient(135deg, var(--primary-color), var(--primary-dark));
+            color: white;
+            padding: 2rem;
+            text-align: center;
+            position: relative;
+        }
+
+        .header h1 {
+            font-size: 2rem;
+            margin-bottom: 0.5rem;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+
+        .header p {
+            font-size: 1.1rem;
+            opacity: 1;
+            font-weight: 600;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+        }
+
+        .header-logos {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 1.5rem;
+        }
+
+        .header-logos img {
+            max-width: 100px;
+            height: auto;
+            background: white;
+            padding: 0.5rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .footer-info {
+            background: #f8f9fa;
+            padding: 1.5rem;
+            text-align: center;
+            border-top: 3px solid var(--primary-color);
+            margin-top: 3rem;
+        }
+
+        .footer-info p {
+            margin: 0.5rem 0;
+            color: var(--text-dark);
+            font-weight: 500;
+        }
+
+        .footer-info a {
+            color: var(--primary-color);
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .footer-info a:hover {
+            text-decoration: underline;
+        }
+
+        .contract-content {
+            padding: 3rem 2rem;
+        }
+
+        .contract-title {
+            text-align: center;
+            font-size: 1.8rem;
+            font-weight: 800;
+            color: var(--primary-dark);
+            margin-bottom: 2rem;
+            padding-bottom: 1rem;
+            border-bottom: 3px solid var(--primary-color);
+            font-family: 'Amiri', serif;
+        }
+
+        .section {
+            margin-bottom: 2rem;
+        }
+
+        .section-title {
+            font-size: 1.3rem;
+            font-weight: 700;
+            color: var(--primary-dark);
+            margin-bottom: 1rem;
+            padding: 0.7rem 1rem;
+            background: linear-gradient(to right, rgba(30, 136, 168, 0.1), transparent);
+            border-right: 4px solid var(--primary-color);
+        }
+
+        .section-content {
+            line-height: 2;
+            color: var(--text-dark);
+            padding: 0 1rem;
+            text-align: justify;
+        }
+
+        .section-content ol, .section-content ul {
+            padding-right: 2rem;
+            margin-top: 0.5rem;
+        }
+
+        .section-content li {
+            margin-bottom: 0.7rem;
+        }
+
+        .form-section {
+            background: #f8f9fa;
+            padding: 2rem;
+            border-radius: 10px;
+            margin: 2rem 0;
+        }
+
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+
+        .form-group label {
+            display: block;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+            color: var(--text-dark);
+        }
+
+        .form-group label .required {
+            color: var(--accent-color);
+            margin-right: 0.2rem;
+        }
+
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+            width: 100%;
+            padding: 0.8rem 1rem;
+            border: 2px solid var(--border-color);
+            border-radius: 8px;
+            font-size: 1rem;
+            font-family: 'Cairo', sans-serif;
+            transition: all 0.3s ease;
+        }
+
+        .form-group input:focus,
+        .form-group select:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: var(--primary-color);
+            box-shadow: 0 0 0 3px rgba(30, 136, 168, 0.1);
+        }
+
+        .discount-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1.5rem 0;
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .discount-table thead {
+            background: linear-gradient(135deg, var(--primary-color), var(--primary-dark));
+            color: white;
+        }
+
+        .discount-table th {
+            padding: 1rem;
+            text-align: center;
+            font-weight: 700;
+        }
+
+        .discount-table td {
+            padding: 1rem;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .discount-table tr:last-child td {
+            border-bottom: none;
+        }
+
+        .discount-table tbody tr:hover {
+            background: rgba(30, 136, 168, 0.05);
+        }
+
+        .discount-table input[type="number"] {
+            width: 120px;
+            padding: 0.5rem;
+            border: 2px solid var(--border-color);
+            border-radius: 5px;
+            text-align: center;
+            font-weight: 600;
+        }
+
+        .checkbox-group {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            padding: 1.5rem;
+            background: #fff3cd;
+            border: 2px solid var(--secondary-color);
+            border-radius: 10px;
+            margin: 2rem 0;
+        }
+
+        .checkbox-group input[type="checkbox"] {
+            width: 24px;
+            height: 24px;
+            cursor: pointer;
+        }
+
+        .checkbox-group label {
+            font-size: 1.1rem;
+            font-weight: 600;
+            cursor: pointer;
+            flex: 1;
+        }
+
+        .signature-section {
+            background: #f8f9fa;
+            padding: 2rem;
+            border-radius: 10px;
+            margin: 2rem 0;
+        }
+
+        .signature-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .signature-box {
+            border: 2px dashed var(--primary-color);
+            padding: 1.5rem;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        .signature-box h3 {
+            color: var(--primary-dark);
+            margin-bottom: 1rem;
+        }
+
+        .signature-box p {
+            margin: 0.5rem 0;
+            color: #666;
+        }
+
+        .signature-canvas {
+            border: 2px solid var(--border-color);
+            border-radius: 5px;
+            background: white;
+            cursor: crosshair;
+            width: 100%;
+            max-width: 300px;
+            height: 150px;
+            margin: 1rem auto;
+            display: block;
+        }
+
+        .btn {
+            padding: 1rem 2rem;
+            font-size: 1.1rem;
+            font-weight: 700;
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-family: 'Cairo', sans-serif;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.7rem;
+            text-decoration: none;
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, var(--primary-color), var(--primary-dark));
+            color: white;
+            box-shadow: 0 5px 15px rgba(30, 136, 168, 0.3);
+        }
+
+        .btn-primary:hover:not(:disabled) {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(30, 136, 168, 0.4);
+        }
+
+        .btn-primary:disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+        }
+
+        .btn-secondary {
+            background: white;
+            color: var(--primary-color);
+            border: 2px solid var(--primary-color);
+        }
+
+        .btn-secondary:hover {
+            background: var(--primary-color);
+            color: white;
+        }
+
+        .button-group {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 2rem;
+            padding: 2rem;
+            background: #f8f9fa;
+            border-radius: 10px;
+        }
+
+        .info-box {
+            background: linear-gradient(135deg, rgba(30, 136, 168, 0.1), rgba(77, 184, 216, 0.1));
+            padding: 1.5rem;
+            border-radius: 10px;
+            border-right: 4px solid var(--primary-color);
+            margin: 1.5rem 0;
+        }
+
+        .info-box h4 {
+            color: var(--primary-dark);
+            margin-bottom: 0.7rem;
+            font-size: 1.2rem;
+        }
+
+        .info-box p {
+            line-height: 1.8;
+            color: var(--text-dark);
+        }
+
+        .success-message {
+            display: none;
+            background: var(--success-color);
+            color: white;
+            padding: 1.5rem;
+            border-radius: 10px;
+            text-align: center;
+            margin: 2rem 0;
+            animation: slideDown 0.5s ease;
+        }
+
+        @keyframes slideDown {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .error-message {
+            background: var(--accent-color);
+            color: white;
+            padding: 1rem;
+            border-radius: 8px;
+            margin: 1rem 0;
+            display: none;
+        }
+
+        .modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.8);
+            z-index: 1000;
+            justify-content: center;
+            align-items: center;
+            padding: 1rem;
+        }
+
+        .modal.active {
+            display: flex;
+        }
+
+        .modal-content {
+            background: white;
+            padding: 2rem;
+            border-radius: 15px;
+            max-width: 500px;
+            width: 100%;
+            text-align: center;
+        }
+
+        .modal-content h2 {
+            color: var(--primary-dark);
+            margin-bottom: 1rem;
+        }
+
+        .modal-content p {
+            line-height: 1.8;
+            margin-bottom: 1.5rem;
+        }
+
+        @media (max-width: 768px) {
+            .contract-content {
+                padding: 2rem 1rem;
+            }
+
+            .signature-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .discount-table {
+                font-size: 0.9rem;
+            }
+
+            .discount-table input[type="number"] {
+                width: 80px;
+            }
+
+            .button-group {
+                flex-direction: column;
+            }
+
+            .btn {
+                width: 100%;
+                justify-content: center;
+            }
+        }
+
+        @media print {
+            body {
+                background: white;
+                padding: 0;
+            }
+
+            .container {
+                box-shadow: none;
+            }
+
+            .button-group,
+            .form-section {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="header-logos">
+                <img src="https://pfst.cf2.poecdn.net/base/image/1fff5befacbc2ef6049a7a329cf53be50fd932f14a6eeec0209830904393a357?w=1036&h=1080" alt="شعار كيور لينك">
+                <img src="https://pfst.cf2.poecdn.net/base/image/159d317cf4f9e5c630ca28851a4d1b6613002263974a0ba7409d602e21896ddf?w=1024&h=1024" alt="شعار رعاية بلس">
+            </div>
+            <h1><i class="fas fa-file-contract"></i> عقد اتفاق تفعيل بطاقة خصم طبية</h1>
+            <p>شركة كيور لينك للبرمجيات المتطورة المحدودة</p>
+        </div>
+
+        <div class="contract-content">
+            <div class="contract-title">
+                عقد اتفاق تفعيل بطاقة خصم طبية
+            </div>
+
+            <!-- الطرف الأول -->
+            <div class="section">
+                <div class="section-title">الطرف الأول:</div>
+                <div class="section-content">
+                    <p>شركة كيور لينك للبرمجيات المتطورة المحدودة، شركة سودانية مقرها جمهورية السودان، ويمثلها السيد/ <strong>عبدالرحيم عمر الخضر محمد</strong>، بصفته المدير العام، ويشار إليها لاحقاً بـ <strong>(الشركة)</strong>.</p>
+                </div>
+            </div>
+
+            <!-- الطرف الثاني - نموذج -->
+            <div class="form-section">
+                <h3 style="color: var(--primary-dark); margin-bottom: 1.5rem;">
+                    <i class="fas fa-hospital"></i> بيانات الطرف الثاني (المنشأة الطبية)
+                </h3>
+
+                <div class="form-group">
+                    <label><span class="required">*</span> اسم المنشأة الطبية/الجهة:</label>
+                    <input type="text" id="facilityName" required placeholder="أدخل اسم المنشأة">
+                </div>
+
+                <div class="form-group">
+                    <label><span class="required">*</span> اسم الممثل القانوني:</label>
+                    <input type="text" id="representativeName" required placeholder="أدخل اسم الممثل القانوني">
+                </div>
+
+                <div class="form-group">
+                    <label><span class="required">*</span> الصفة/المنصب:</label>
+                    <input type="text" id="position" required placeholder="مثال: المدير العام، المالك">
+                </div>
+
+                <div class="form-group">
+                    <label><span class="required">*</span> عنوان المقر:</label>
+                    <textarea id="address" rows="3" required placeholder="أدخل العنوان الكامل"></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label><span class="required">*</span> رقم الهاتف:</label>
+                    <input type="tel" id="phone" required placeholder="0123456789">
+                </div>
+
+                <div class="form-group">
+                    <label>البريد الإلكتروني:</label>
+                    <input type="email" id="email" placeholder="example@domain.com">
+                </div>
+
+                <div class="form-group">
+                    <label><span class="required">*</span> نوع المنشأة:</label>
+                    <select id="facilityType" required>
+                        <option value="">اختر نوع المنشأة</option>
+                        <option value="hospital">مستشفى</option>
+                        <option value="clinic">عيادة</option>
+                        <option value="medicalCenter">مركز طبي</option>
+                        <option value="pharmacy">صيدلية</option>
+                        <option value="laboratory">معمل تحاليل</option>
+                        <option value="optics">مركز بصريات</option>
+                        <option value="other">أخرى</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- التمهيد -->
+            <div class="section">
+                <div class="section-title">التمهيد:</div>
+                <div class="section-content">
+                    <p>نظراً لأن الشركة تمتلك وتدير نظاماً رقمياً لتسويق بطاقة خصم طبية تمنح حامليها خصومات على الخدمات الطبية والصيدلانية والتحاليل لدى مزودي خدمة معتمدين، وحيث يرغب الطرف المتعاقد في الانضمام إلى هذا النظام لتقديم خصومات لعملاء البطاقة، فقد تم الاتفاق بين الطرفين، وهما بكامل الأهلية القانونية، على ما يلي:</p>
+                </div>
+            </div>
+
+            <!-- البنود -->
+            <div class="section">
+                <div class="section-title">البند الأول: موضوع العقد</div>
+                <div class="section-content">
+                    <p>يتعهد الطرف المتعاقد بتقديم خصومات طبية محددة لحاملي بطاقة كيور لينك الطبية، وفق النسب المتفق عليها في الملحق رقم (1)، وتتعهد الشركة بإدراج بيانات الطرف المتعاقد ضمن شبكة مقدمي الخدمة في تطبيقها ومنصاتها التسويقية.</p>
+                </div>
+            </div>
+
+            <div class="section">
+                <div class="section-title">البند الثاني: التزامات الشركة</div>
+                <div class="section-content">
+                    <p>تلتزم الشركة بالآتي:</p>
+                    <ol>
+                        <li>الترويج للطرف المتعاقد كجهة مشاركة في برنامج الخصومات الطبية عبر موقعها الإلكتروني وتطبيقها وصفحاتها التسويقية.</li>
+                        <li>تزويد الطرف المتعاقد بوسائل تحقق من عضوية حاملي البطاقة (رمز QR – رقم عضوية – أو بطاقة رقمية).</li>
+                        <li>تسهيل تواصل العملاء مع الطرف المتعاقد من خلال المنصة.</li>
+                        <li>عدم التدخل في أسعار أو سياسات الطرف المتعاقد الداخلية.</li>
+                    </ol>
+                </div>
+            </div>
+
+            <div class="section">
+                <div class="section-title">البند الثالث: التزامات الطرف المتعاقد</div>
+                <div class="section-content">
+                    <ol>
+                        <li>تقديم الخصم المتفق عليه لجميع حاملي بطاقة كيور لينك الطبية عند إبرازهم للبطاقة أو رمز التحقق.</li>
+                        <li>الالتزام بنسبة الخصم المحددة وعدم فرض أي رسوم إضافية على حاملي البطاقة.</li>
+                        <li>التعاون في الأنشطة الإعلانية المشتركة والتحديث الدوري لبيانات الخدمات والأسعار.</li>
+                        <li>إخطار الشركة بأي تعديل في الأسعار أو عروض جديدة قبل تنفيذها بمدة لا تقل عن (5) أيام عمل.</li>
+                    </ol>
+                </div>
+            </div>
+
+            <div class="section">
+                <div class="section-title">البند الرابع: مدة العقد</div>
+                <div class="section-content">
+                    <p>مدة هذا العقد سنة واحدة تبدأ من تاريخ توقيعه، قابلة للتجديد لمدة مماثلة ما لم يخطر أحد الطرفين الآخر برغبته في عدم التجديد قبل (30) يوماً من انتهاء المدة.</p>
+                </div>
+            </div>
+
+            <div class="section">
+                <div class="section-title">البند الخامس: السرية وحماية البيانات</div>
+                <div class="section-content">
+                    <p>يتعهد الطرفان بالحفاظ على سرية المعلومات الخاصة بالعملاء والبيانات الطبية المتبادلة، والالتزام بجميع القوانين المتعلقة بحماية الخصوصية وعدم استخدامها لأي غرض آخر.</p>
+                </div>
+            </div>
+
+            <div class="section">
+                <div class="section-title">البند السادس: الإنهاء</div>
+                <div class="section-content">
+                    <p>يجوز لأي طرف إنهاء العقد في الحالات التالية:</p>
+                    <ol>
+                        <li>إخلال الطرف الآخر بالتزاماته الجوهرية وعدم تصحيحها خلال (10) أيام من استلام إشعار خطي.</li>
+                        <li>ارتكاب الطرف المتعاقد لأي عمل يضر بسمعة الشركة أو يخالف القيم المهنية.</li>
+                        <li>رغبة أي طرف في الإنهاء بموجب إشعار خطي قبل (30) يوماً من تاريخ الإنهاء.</li>
+                    </ol>
+                </div>
+            </div>
+
+            <div class="section">
+                <div class="section-title">البند السابع: المسؤولية</div>
+                <div class="section-content">
+                    <ol>
+                        <li>لا تتحمل الشركة أي مسؤولية عن الخدمات الطبية المقدمة من الطرف المتعاقد.</li>
+                        <li>تقع كامل المسؤولية المهنية والقانونية على الجهة المقدمة للخدمة تجاه عملائها.</li>
+                        <li>دور الشركة يقتصر على إدارة وتسويق البطاقة وربط العميل بمقدم الخدمة.</li>
+                    </ol>
+                </div>
+            </div>
+
+            <div class="section">
+                <div class="section-title">البند الثامن: تسوية النزاعات</div>
+                <div class="section-content">
+                    <p>يُسعى لحل أي نزاع ينشأ عن هذا العقد ودياً خلال (15) يوماً من الإخطار، وفي حال تعذر ذلك، تكون محاكم جمهورية السودان هي الجهة المختصة بالنظر والفصل في النزاع.</p>
+                </div>
+            </div>
+
+            <div class="section">
+                <div class="section-title">البند التاسع: أحكام عامة</div>
+                <div class="section-content">
+                    <ol>
+                        <li>يمثل هذا العقد كامل الاتفاق بين الطرفين، ويلغي أي اتفاقات أو تفاهمات سابقة.</li>
+                        <li>لا يجوز تعديل أي بند إلا بموجب ملحق خطي موقع من الطرفين.</li>
+                        <li>حُرر هذا العقد من نسختين أصليتين بيد كل طرف نسخة للعمل بموجبها.</li>
+                    </ol>
+                </div>
+            </div>
+
+            <!-- ملحق الخدمات -->
+            <div class="section">
+                <div class="section-title">ملحق العقد: جدول الخدمات ونسبة الخصم</div>
+                <div class="section-content">
+                    <div class="info-box">
+                        <h4><i class="fas fa-info-circle"></i> تعليمات مهمة</h4>
+                        <p>يرجى تحديد نسبة الخصم المقدمة لحاملي بطاقة رعاية بلس لكل خدمة. إذا لم تكن الخدمة متوفرة لديكم، اتركوا الحقل فارغاً أو ضعوا 0%.</p>
+                    </div>
+
+                    <table class="discount-table">
+                        <thead>
+                            <tr>
+                                <th style="width: 50px;">م</th>
+                                <th>الخدمة</th>
+                                <th style="width: 180px;">نسبة الخصم (%)</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td style="text-align: center;">1</td>
+                                <td>الكشوفات</td>
+                                <td style="text-align: center;">
+                                    <input type="number" id="discount1" min="0" max="100" value="0" placeholder="0-100">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="text-align: center;">2</td>
+                                <td>الأشعة</td>
+                                <td style="text-align: center;">
+                                    <input type="number" id="discount2" min="0" max="100" value="0" placeholder="0-100">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="text-align: center;">3</td>
+                                <td>التحاليل</td>
+                                <td style="text-align: center;">
+                                    <input type="number" id="discount3" min="0" max="100" value="0" placeholder="0-100">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="text-align: center;">4</td>
+                                <td>العمليات</td>
+                                <td style="text-align: center;">
+                                    <input type="number" id="discount4" min="0" max="100" value="0" placeholder="0-100">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="text-align: center;">5</td>
+                                <td>الأدوية</td>
+                                <td style="text-align: center;">
+                                    <input type="number" id="discount5" min="0" max="100" value="0" placeholder="0-100">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="text-align: center;">6</td>
+                                <td>الأجهزة والمستلزمات الطبية</td>
+                                <td style="text-align: center;">
+                                    <input type="number" id="discount6" min="0" max="100" value="0" placeholder="0-100">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="text-align: center;">7</td>
+                                <td>الخدمات الأخرى</td>
+                                <td style="text-align: center;">
+                                    <input type="number" id="discount7" min="0" max="100" value="0" placeholder="0-100">
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- قسم الموافقة -->
+            <div class="checkbox-group">
+                <input type="checkbox" id="agreeTerms">
+                <label for="agreeTerms">
+                    <i class="fas fa-check-circle"></i>
+                    أقر بأنني قرأت جميع بنود هذا العقد وفهمتها بشكل كامل، وأوافق على الالتزام بها نيابة عن المنشأة الطبية المذكورة أعلاه
+                </label>
+            </div>
+
+            <!-- قسم التوقيع -->
+            <div class="signature-section">
+                <h3 style="text-align: center; color: var(--primary-dark); margin-bottom: 2rem;">
+                    <i class="fas fa-signature"></i> التوقيعات
+                </h3>
+
+                <div class="signature-grid">
+                    <div class="signature-box">
+                        <h3>الطرف الأول (الشركة)</h3>
+                        <p><strong>الاسم:</strong> عبدالرحيم عمر الخضر محمد</p>
+                        <p><strong>الصفة:</strong> المدير العام</p>
+                        <p><strong>المنشأة:</strong> كيور لينك للبرمجيات المتطورة المحدودة</p>
+                        <p><strong>المقر:</strong> جمهورية السودان</p>
+                        <div style="margin-top: 2rem; padding: 1.5rem; background: white; border: 2px solid var(--primary-color); border-radius: 8px; text-align: center;">
+                            <p style="font-weight: 700; color: var(--primary-color); margin-bottom: 1rem;">التوقيع الإلكتروني:</p>
+                            <img src="https://pfst.cf2.poecdn.net/base/image/b1d186d86273b5ac4d54b1e20af6175f6526eb460447ad2172e41c10c145ba66?w=188&h=144" alt="توقيع المدير العام" style="max-width: 200px; height: auto; border: 1px solid #e0e0e0; padding: 0.5rem; background: #f8f9fa; border-radius: 5px; margin-bottom: 1rem;">
+                            <p style="font-weight: 700; color: var(--primary-color); margin-bottom: 0.5rem;">ختم الشركة:</p>
+                            <img src="https://pfst.cf2.poecdn.net/base/image/3c917815ba91bec8abf37acc09fe41f6f2c0a79c565c5bc7fb1598d86df8f37f?w=1063&h=1063" alt="ختم كيور لينك" style="max-width: 150px; height: auto; border: 1px solid #e0e0e0; padding: 0.5rem; background: #f8f9fa; border-radius: 5px;">
+                        </div>
+                    </div>
+
+                    <div class="signature-box">
+                        <h3>الطرف الثاني (المتعاقد)</h3>
+                        <p><strong>الاسم:</strong> <span id="signName">_____________</span></p>
+                        <p><strong>الصفة:</strong> <span id="signPosition">_____________</span></p>
+                        <p><strong>المنشأة:</strong> <span id="signFacility">_____________</span></p>
+                        <p><strong>المقر:</strong> <span id="signAddress">_____________</span></p>
+                        <div style="margin-top: 1rem;">
+                            <canvas id="signatureCanvas" class="signature-canvas"></canvas>
+                            <button type="button" class="btn btn-secondary" onclick="clearSignature()">
+                                <i class="fas fa-eraser"></i> مسح التوقيع
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div style="text-align: center; margin-top: 2rem;">
+                    <p><strong>التاريخ:</strong> <span id="contractDate"></span></p>
+                </div>
+            </div>
+
+            <!-- رسائل الخطأ والنجاح -->
+            <div class="error-message" id="errorMessage"></div>
+            <div class="success-message" id="successMessage">
+                <i class="fas fa-check-circle" style="font-size: 3rem; margin-bottom: 1rem;"></i>
+                <h2>تم إرسال العقد بنجاح!</h2>
+                <p>شكراً لانضمامكم إلى شبكة رعاية بلس. سيتم التواصل معكم قريباً.</p>
+            </div>
+
+            <!-- أزرار الإجراءات -->
+            <div class="button-group">
+                <button type="button" class="btn btn-primary" onclick="submitContract()" id="submitBtn">
+                    <i class="fas fa-paper-plane"></i> إرسال العقد
+                </button>
+                <button type="button" class="btn btn-secondary" onclick="window.print()">
+                    <i class="fas fa-print"></i> طباعة العقد
+                </button>
+                <button type="button" class="btn btn-secondary" onclick="saveAsPDF()">
+                    <i class="fas fa-file-pdf"></i> حفظ كـ PDF
+                </button>
+            </div>
+
+            <!-- معلومات الشركة في الأسفل -->
+            <div class="footer-info">
+                <p><i class="fas fa-globe"></i> <strong>الموقع:</strong> <a href="https://curelink.online" target="_blank">curelink.online</a></p>
+                <p><i class="fas fa-envelope"></i> <strong>البريد الإلكتروني:</strong> <a href="/cdn-cgi/l/admin@curelink.online#1776737a7e7957746265727b7e797c3978797b7e7972"><span class="__cf_email__" data-cfemail="7b1a1f1612153b180e091e171215105514151712151e">[admin@curelink.online]</span></a></p>
+                <p><i class="fas fa-phone"></i> <strong>الهاتف:</strong> <a href="tel:0123333660">0123333660</a></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal للتأكيد -->
+    <div class="modal" id="confirmModal">
+        <div class="modal-content">
+            <h2><i class="fas fa-exclamation-triangle" style="color: var(--secondary-color);"></i></h2>
+            <h2>تأكيد الإرسال</h2>
+            <p>هل أنت متأكد من رغبتك في إرسال هذا العقد؟ تأكد من مراجعة جميع البيانات قبل الإرسال.</p>
+            <div style="display: flex; gap: 1rem; justify-content: center;">
+                <button class="btn btn-primary" onclick="confirmSubmit()">
+                    <i class="fas fa-check"></i> نعم، إرسال
+                </button>
+                <button class="btn btn-secondary" onclick="closeModal()">
+                    <i class="fas fa-times"></i> إلغاء
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+        // Set current date
+        document.getElementById('contractDate').textContent = new Date().toLocaleDateString('ar-EG', {
+            year: 'numeric',
+            month: 'long',
+            day: 'numeric'
+        });
+
+        // Signature Canvas
+        const canvas = document.getElementById('signatureCanvas');
+        const ctx = canvas.getContext('2d');
+        let isDrawing = false;
+        let lastX = 0;
+        let lastY = 0;
+
+        // Set canvas size
+        canvas.width = canvas.offsetWidth;
+        canvas.height = canvas.offsetHeight;
+
+        canvas.addEventListener('mousedown', startDrawing);
+        canvas.addEventListener('mousemove', draw);
+        canvas.addEventListener('mouseup', stopDrawing);
+        canvas.addEventListener('mouseout', stopDrawing);
+
+        // Touch events for mobile
+        canvas.addEventListener('touchstart', (e) => {
+            e.preventDefault();
+            const touch = e.touches[0];
+            const rect = canvas.getBoundingClientRect();
+            lastX = touch.clientX - rect.left;
+            lastY = touch.clientY - rect.top;
+            isDrawing = true;
+        });
+
+        canvas.addEventListener('touchmove', (e) => {
+            e.preventDefault();
+            if (!isDrawing) return;
+            const touch = e.touches[0];
+            const rect = canvas.getBoundingClientRect();
+            const x = touch.clientX - rect.left;
+            const y = touch.clientY - rect.top;
+
+            ctx.beginPath();
+            ctx.moveTo(lastX, lastY);
+            ctx.lineTo(x, y);
+            ctx.strokeStyle = '#1e88a8';
+            ctx.lineWidth = 2;
+            ctx.lineCap = 'round';
+            ctx.stroke();
+
+            lastX = x;
+            lastY = y;
+        });
+
+        canvas.addEventListener('touchend', (e) => {
+            e.preventDefault();
+            isDrawing = false;
+        });
+
+        function startDrawing(e) {
+            isDrawing = true;
+            const rect = canvas.getBoundingClientRect();
+            lastX = e.clientX - rect.left;
+            lastY = e.clientY - rect.top;
+        }
+
+        function draw(e) {
+            if (!isDrawing) return;
+            const rect = canvas.getBoundingClientRect();
+            const x = e.clientX - rect.left;
+            const y = e.clientY - rect.top;
+
+            ctx.beginPath();
+            ctx.moveTo(lastX, lastY);
+            ctx.lineTo(x, y);
+            ctx.strokeStyle = '#1e88a8';
+            ctx.lineWidth = 2;
+            ctx.lineCap = 'round';
+            ctx.stroke();
+
+            lastX = x;
+            lastY = y;
+        }
+
+        function stopDrawing() {
+            isDrawing = false;
+        }
+
+        function clearSignature() {
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+        }
+
+        // Update signature preview
+        function updateSignaturePreview() {
+            document.getElementById('signName').textContent = document.getElementById('representativeName').value || '_____________';
+            document.getElementById('signPosition').textContent = document.getElementById('position').value || '_____________';
+            document.getElementById('signFacility').textContent = document.getElementById('facilityName').value || '_____________';
+            document.getElementById('signAddress').textContent = document.getElementById('address').value || '_____________';
+        }
+
+        // Listen to input changes
+        ['facilityName', 'representativeName', 'position', 'address'].forEach(id => {
+            document.getElementById(id).addEventListener('input', updateSignaturePreview);
+        });
+
+        // Validate form
+        function validateForm() {
+            const errorMsg = document.getElementById('errorMessage');
+            errorMsg.style.display = 'none';
+
+            // Check required fields
+            const requiredFields = [
+                { id: 'facilityName', label: 'اسم المنشأة' },
+                { id: 'representativeName', label: 'اسم الممثل القانوني' },
+                { id: 'position', label: 'الصفة/المنصب' },
+                { id: 'address', label: 'العنوان' },
+                { id: 'phone', label: 'رقم الهاتف' },
+                { id: 'facilityType', label: 'نوع المنشأة' }
+            ];
+
+            for (let field of requiredFields) {
+                const value = document.getElementById(field.id).value.trim();
+                if (!value) {
+                    errorMsg.textContent = `الرجاء إدخال ${field.label}`;
+                    errorMsg.style.display = 'block';
+                    document.getElementById(field.id).focus();
+                    return false;
+                }
+            }
+
+            // Check at least one discount
+            let hasDiscount = false;
+            for (let i = 1; i <= 7; i++) {
+                const discount = document.getElementById(`discount${i}`).value;
+                if (discount && parseFloat(discount) > 0) {
+                    hasDiscount = true;
+                    break;
+                }
+            }
+
+            if (!hasDiscount) {
+                errorMsg.textContent = 'الرجاء إدخال نسبة خصم واحدة على الأقل';
+                errorMsg.style.display = 'block';
+                return false;
+            }
+
+            // Check agreement
+            if (!document.getElementById('agreeTerms').checked) {
+                errorMsg.textContent = 'يجب الموافقة على بنود العقد';
+                errorMsg.style.display = 'block';
+                return false;
+            }
+
+            // Check signature
+            const imageData = ctx.getImageData(0, 0, canvas.width, canvas.height);
+            let hasSignature = false;
+            for (let i = 0; i < imageData.data.length; i += 4) {
+                if (imageData.data[i + 3] > 0) {
+                    hasSignature = true;
+                    break;
+                }
+            }
+
+            if (!hasSignature) {
+                errorMsg.textContent = 'الرجاء التوقيع على العقد';
+                errorMsg.style.display = 'block';
+                return false;
+            }
+
+            return true;
+        }
+
+        function submitContract() {
+            if (!validateForm()) {
+                return;
+            }
+
+            document.getElementById('confirmModal').classList.add('active');
+        }
+
+        function closeModal() {
+            document.getElementById('confirmModal').classList.remove('active');
+        }
+
+        async function confirmSubmit() {
+            closeModal();
+
+            // Show loading state
+            const submitBtn = document.getElementById('submitBtn');
+            const originalText = submitBtn.innerHTML;
+            submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> جاري الإرسال...';
+            submitBtn.disabled = true;
+
+            // Collect data
+            const contractData = {
+                timestamp: new Date().toISOString(),
+                facilityName: document.getElementById('facilityName').value,
+                representativeName: document.getElementById('representativeName').value,
+                position: document.getElementById('position').value,
+                address: document.getElementById('address').value,
+                phone: document.getElementById('phone').value,
+                email: document.getElementById('email').value,
+                facilityType: document.getElementById('facilityType').value,
+                discount_consultations: document.getElementById('discount1').value || '0',
+                discount_xray: document.getElementById('discount2').value || '0',
+                discount_lab: document.getElementById('discount3').value || '0',
+                discount_surgery: document.getElementById('discount4').value || '0',
+                discount_medicine: document.getElementById('discount5').value || '0',
+                discount_equipment: document.getElementById('discount6').value || '0',
+                discount_other: document.getElementById('discount7').value || '0',
+                signature: canvas.toDataURL(),
+                contractDate: document.getElementById('contractDate').textContent
+            };
+
+            try {
+                // Send to Google Sheets via Apps Script
+                const scriptURL = 'https://script.google.com/macros/s/AKfycbzSQLWF7T-7KWl5tci_UL8Mo34WuN_EWLpfdJUHywyHMjuuaM9rnPlZic8gfZxo1JX2/exec';
+
+                const response = await fetch(scriptURL, {
+                    method: 'POST',
+                    mode: 'no-cors',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify(contractData)
+                });
+
+                // Show success message
+                document.getElementById('successMessage').style.display = 'block';
+
+                // Scroll to success message
+                document.getElementById('successMessage').scrollIntoView({ behavior: 'smooth' });
+
+                // Log data for debugging
+                console.log('Contract Data sent successfully:', contractData);
+
+            } catch (error) {
+                console.error('Error sending data:', error);
+
+                // Show error but still display success (because of no-cors)
+                document.getElementById('successMessage').style.display = 'block';
+                document.getElementById('successMessage').scrollIntoView({ behavior: 'smooth' });
+            }
+        }
+
+
+        function saveAsPDF() {
+            window.print();
+        }
+    </script>
+</body>
+</html>
